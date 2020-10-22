@@ -1,0 +1,93 @@
+:root {
+    --sort-button-green: green;
+    --price-button-dark-green: darkgreen;
+}
+
+.aside {
+    position: fixed;
+    height: 91.9%;
+    left: 0;
+    bottom: 0;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 5px;
+    border-left: black;
+    box-shadow: 0px 10px 0px 1px;
+    background-color: #a2ff97;
+
+}
+
+.aside h2 {
+    font-weight: 500;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.aside h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.sort-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 0px 0px;
+
+}
+
+.sort-button {
+    height: 25px;
+    width: 59px;
+    padding: 1px;
+    background-color: transparent;
+    border-radius: 25px;
+    border-color: gray;
+}
+
+.sort-button.active {
+    border-color: var(--sort-button-green);
+    background-color: lawngreen;
+}
+
+.sort-button-inner {
+    float: left;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.sort-button-inner.active {
+    float: right;
+    background-color: var(--sort-button-green);
+}
+
+.aside__price-button {
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: var(--price-button-dark-green);
+    background-color: var(--price-button-dark-green);
+    color: white;
+    border-width: 2px;
+}
+
+.aside__global-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.add-item-button {
+    background-color: #1cb50d;
+    color: lawngreen;
+
+}

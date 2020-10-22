@@ -1,0 +1,80 @@
+.header {
+    background-color: limegreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8.1%;
+    border-bottom: black;
+    border-width: 5px;
+    box-shadow: 0px 1px 0px 0px rgb(22, 22, 22);
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header__container-nav {
+    display: flex;
+    margin: 5px 0 0 2%;
+    width: 28%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color : green;
+
+}
+
+
+.header__container-nav h1 {
+    font-family: "Comic Sans MS", sans-serif ;
+    color: darkgreen;
+}
+
+.header__container-nav a {
+    text-decoration: none;
+    color: black;
+    width: auto;
+    height: 100%;
+    padding: 18px 10px;
+    border-radius: 3% 3% 0 0;
+}
+
+.header__container-nav a:hover,
+.header__container-nav a:first-of-type {
+    background-color: lime;
+}
+
+.header__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 700px;
+
+}
+
+.header__searchbar {
+    width: 35%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: lawngreen;
+}
+
+.header__form button {
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: darkgreen;
+    color: greenyellow;
+    border-width: 3px;
+}
+
+.header__form button:last-child {
+    border-color: darkgreen;
+    color: greenyellow;
+}
