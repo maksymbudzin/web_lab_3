@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMSTONE</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1>GEMSTONE</h1>
+    <nav>
+        <ul class="navigation-list">
+            <li><a id="create_gemstone_open_button" class="create_gemstone_open_button">create gemstone</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-gemstone">
+        <input type="text" id="find-gemstone" name="find-gemstone" class="find-gemstone"
+               placeholder="Enter gemstone name. . .">
+        <button class="clear-search-bar" id="clear-search-bar">Clear</button>
+    </div>
+</header>
+
+<section class="gemstones-section">
+
+    <div class="gemstones-manager">
+
+        
+        <div class="sort-manager">
+            <label for="sort-select">Sort By</label>
+            <select name="sort-select" id="sort-select" onchange="visualiseSortedGemstones()">
+                <option value="none">dont sort</option>
+                <option value="weight">weight</option>
+            </select>
+        </div>
+        <div class="calculate-price">
+            <button id="calculate-price__button" onclick="calculatePrice()">Calculate</button>
+            <label id="total-price">Total price: </label>
+        </div>
+
+    </div>
+    <ul id="gemstones-list" class="gemstones-list"></ul>
+</section>
+<section class="create_gemstone" id="create_gemstone">
+    <div id="cross" class="cross">❌</div>
+    <form class="form__create_gemstone" , id="form__create_gemstone">
+        <h1>Create gemstone</h1>
+        <div>
+            <label>Name</label>
+            <input id="create_name" name="name" type="text" required>
+        </div>
+        <div>
+            <label>Weight in carats</label>
+            <input id="create_weightInCarats" name="weightInCarats" type="number" step=0.1 required>
+        </div>
+        <div>
+            <label>Price in USD</label>
+            <input id="create_priceInUSD" name="priceInUSD" type="number" step=100 required>
+        </div>
+        <button type="button" id="create_button" onclick="create()">Create</button>
+    </form>
+</section>
+<script src="scripts"></script>
+<script src="scripts/crud.js"></script>
+<script src="scripts/api.js"></script>
+
+</body>
+
+</html>
