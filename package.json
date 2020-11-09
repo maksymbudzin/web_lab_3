@@ -1,0 +1,11 @@
+{
+  "name": "lab_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx browser-sync start --server --files ."
+  },
+  "author": "Maksym Budzin",
+  "license": "ISC"
+}
